@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:padding="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/language" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/spinnerID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/secondaryText"
+            android:gravity="center"
+            android:padding="3dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/right_arrow_icon"
+            app:tint="@color/primaryText"
+            android:layout_gravity="center" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/idToSpinner"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/secondaryText" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Enter text to translate"
+        android:padding="5dp"
+        android:textColorHint="@color/primaryText"
+        app:hintTextColor="@color/primaryText"
+        android:backgroundTint="@color/background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtSource"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/primaryText"
+            android:textColorHint="@color/buttonBackground"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/buttonBackground"
+        android:textColor="@color/buttonText" />
+
+    <TextView
+        android:id="@+id/idTVTranslatedTV"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/accent"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/micImage"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mic_icon"
+        app:tint="@color/accent" />
+</LinearLayout>

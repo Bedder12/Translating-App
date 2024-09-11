@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "210739033240",
+    "project_id": "translator-app-a86e4",
+    "storage_bucket": "translator-app-a86e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210739033240:android:3d3af2b33b1af7e000cced",
+        "android_client_info": {
+          "package_name": "com.hfad.translatorapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsPIn9Tutrz28STXMP8uIb09VtOgtWqok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
