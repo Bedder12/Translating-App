@@ -31,32 +31,19 @@ Setup and Configuration
 4. Sync and Build: Once Firebase is configured and dependencies are added, sync the project and build it in Android Studio.
 5. Run the Application: Use an emulator or connect a physical Android device and run the app from Android Studio.
 
-App Workflow
-Language Selection:
+# App Workflow
+- Language Selection: Users select the source and target languages via dropdown menus (Spinner elements).
+- Text Input: The user enters text in the provided input field.
+- Voice Input: Users can use the microphone button to dictate text for translation, which is then converted into text via Google’s Speech-to-Text service.
+- Translation: Upon clicking the Translate button, the app processes the text using Firebase ML Kit and returns the translated text.  
+- Display: The translated text is displayed in a text field.
 
-Users select the source and target languages via dropdown menus (Spinner elements).
-Text Input:
-
-The user enters text in the provided input field.
-Voice Input:
-
-Users can use the microphone button to dictate text for translation, which is then converted into text via Google’s Speech-to-Text service.
-Translation:
-
-Upon clicking the Translate button, the app processes the text using Firebase ML Kit and returns the translated text.
-Display:
-
-The translated text is displayed in a text field.
-Example of Use
+  
+# Example of Use
 User Interface
-Start Screen: Users can choose the languages for translation from dropdown menus.
-
-
-Text Input and Translation: After entering text and selecting languages, users click Translate to get the result.
-
-
-Voice Input: Click on the microphone to enable voice recognition for translation.
-
-
-Translation Result: The translated text is displayed once the process is complete.
+1. Start Screen: Users can choose the languages for translation from dropdown menus.
+2. Text Input and Translation: After entering text and selecting languages, users click Translate to get the result.
+3. Voice Input: Click on the microphone to enable voice recognition for translation.
+4. Translation Result: The translated text is displayed once the process is complete.
+   
 
